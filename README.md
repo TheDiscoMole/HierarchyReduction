@@ -7,7 +7,7 @@ wtf do I even mean by *information hierarchy reduction*... let me give you a __t
 Let's say you are analyzing a constant stream of Tweets and due to the size of your Net you are accumulating 100 Tweets between every iteration of your Net. For the most part, in such a scenario, your information and network hierarchy would ideally function a little something like this:
 
 <p align="center">
-    <img src="https://image.ibb.co/gYyQ9p/Twitter_Hierarchy_Example.jpg"/>
+    <img src="https://image.ibb.co/m8sKkU/Twitter_Hierarchy_Example.jpg"/>
 </p>
 
 Here we go from character embeddings, to token embeddings, to individual-tweet embeddings and finally to tweet-stream embeddings. This results in the remainder of our DL model now being able to receive a very logical reduction of the meaning vector space.
@@ -46,7 +46,7 @@ tweet = model([max_letters,num_words,character_embedding])
 
 Clearly this approach is already hitting a brick wall and requires the user to pad each word to `max_letters`, which is quite frankly giving me OCD spasm.
 
-`HierarchyReduction` works around this issue and at the cost of some efficiency can even be used to completely remove the need for manual padding from DL models:
+`HierarchyReduction` works around this issue and at the cost of a little efficiency and can even be used to completely remove the need for manual padding from DL models:
 
 ```
 import torch
