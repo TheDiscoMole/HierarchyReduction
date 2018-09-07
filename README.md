@@ -7,7 +7,7 @@ wtf do I even mean by *information hierarchy reduction*... let me give you a __t
 Let's say you are analyzing a constant stream of Tweets and due to the size of your Net you are accumulating 100 Tweets between every iteration of your Net. For the most part, in such a scenario, your information and network hierarchy would ideally function a little something like this:
 
 <p align="center">
-    <img src="https://image.ibb.co/m8sKkU/Twitter_Hierarchy_Example.jpg"/>
+    <img src="https://image.ibb.co/cogn5U/Twitter_Hierarchy_Example.jpg"/>
 </p>
 
 Here we go from character embeddings, to token embeddings, to individual-tweet embeddings and finally to tweet-stream embeddings. This results in the remainder of our DL model now being able to receive a very logical reduction of the meaning vector space.
