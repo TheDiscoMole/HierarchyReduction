@@ -8,7 +8,7 @@ class HierarchyReduction1d (torch.nn.Module):
     of your data "indefinitely".
 
     args:
-    - reducer: reduces the current information level                            (optional|default: torch.mean)
+    - reducer: reduces the current information level                            (optional|default: torch.sum)
 
     source: https://github.com/TheDiscoMole/HierarchyReduction
     """

@@ -1,6 +1,6 @@
 ## HierarchyReduction
 
-This repository proposed Informational Hierarchy Reduction a potential alternative approach to increasing the context window of LLMs. **NOTE:** fully theoretical, basically useless without relevant optimizations
+This repository proposes Informational Hierarchy Reduction a potential alternative approach to increasing the context window of LLMs. **NOTE:** fully theoretical, basically useless without relevant optimizations
 
 ```py
 class HierarchyReduction1d (torch.nn.Module):
@@ -11,7 +11,7 @@ class HierarchyReduction1d (torch.nn.Module):
     of your data "indefinitely".
 
     args:
-    - reducer: reduces the current information level                            (optional|default: torch.mean)
+    - reducer: reduces the current information level                            (optional|default: torch.sum)
 
     source: https://github.com/TheDiscoMole/HierarchyReduction
     """
