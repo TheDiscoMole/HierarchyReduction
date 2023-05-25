@@ -50,4 +50,4 @@ This example process could be arbitrarily extended until an entire corpus of dat
 Currently the most sensible way to implement this behaviour is to utilize `nested_tensor`, but unfortunately due to its beta status there are several impeding factor toward the efficiency of this method:
 
 - `transpose` and similar operations require contiguous copies of our inputs
-- `sum` (and hopefully as some point `mean`) cannot fully reduce a `nested_tensor` into a normal tensor (though this will probably have to be contiguous no matter what)
+- `sum` (and hopefully as some point `mean`) cannot fully reduce a `nested_tensor` into a normal tensor
